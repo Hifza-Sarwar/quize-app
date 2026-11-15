@@ -1,16 +1,31 @@
-# React + Vite
+Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive multiple-choice quiz app built with React. Answer one question at a time, get instant feedback, and see your final score at the end.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Progress bar and live score
+Green/red feedback on answers
+Result screen with score ring
+Try Again button
+Fully responsive (mobile, tablet, desktop)
+Run Locally
+bash
+npm install
+npm run dev
 
-## React Compiler
+Open the URL shown in the terminal (usually http://localhost:5173).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Add Questions
 
-## Expanding the ESLint configuration
+Edit src/questions.js:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+js
+{
+  question: "Which keyword declares a block-scoped variable?",
+  options: ["var", "let", "function", "define"],
+  correctAnswer: 1, // index of the correct option
+}
+Tech
+
+React, CSS
